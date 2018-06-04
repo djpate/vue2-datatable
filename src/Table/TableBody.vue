@@ -14,8 +14,7 @@
               :row="item"
               :field="col.field"
               :value="item[col.field]"
-              :nested="item.__nested__"
-              v-bind="$props">
+              :nested="item.__nested__">
             </component>
             <template v-else>
               {{ item[col.field] }}
