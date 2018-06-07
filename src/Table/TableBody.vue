@@ -14,7 +14,8 @@
               :row="item"
               :field="col.field"
               :value="item[col.field]"
-              :nested="item.__nested__">
+              :nested="item.__nested__"
+              :xprops="xprops">
             </component>
             <template v-else>
               {{ item[col.field] }}
